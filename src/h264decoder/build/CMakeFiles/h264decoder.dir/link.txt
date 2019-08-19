@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libh264decoder.so -o libh264decoder.so CMakeFiles/h264decoder.dir/h264decoder.cpp.o CMakeFiles/h264decoder.dir/h264decoder_python.cpp.o -lavcodec -lswscale -lavutil -lboost_python -lpython2.7 

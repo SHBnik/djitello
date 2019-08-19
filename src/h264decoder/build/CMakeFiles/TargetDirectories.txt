@@ -1,0 +1,7 @@
+/home/shb/Tello-Python/Tello_Video/h264decoder/build/CMakeFiles/install/strip.dir
+/home/shb/Tello-Python/Tello_Video/h264decoder/build/CMakeFiles/install/local.dir
+/home/shb/Tello-Python/Tello_Video/h264decoder/build/CMakeFiles/install.dir
+/home/shb/Tello-Python/Tello_Video/h264decoder/build/CMakeFiles/list_install_components.dir
+/home/shb/Tello-Python/Tello_Video/h264decoder/build/CMakeFiles/rebuild_cache.dir
+/home/shb/Tello-Python/Tello_Video/h264decoder/build/CMakeFiles/edit_cache.dir
+/home/shb/Tello-Python/Tello_Video/h264decoder/build/CMakeFiles/h264decoder.dir
