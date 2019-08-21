@@ -1,17 +1,7 @@
-#!/usr/bin/env python
-# license removed for brevity
-# import rospy
-# from std_msgs.msg import String
-
-
-import sys
-sys.dont_write_bytecode = True
 import socket
 import threading
 import time
 import numpy as np
-
-time.sleep(0.5)
 import libh264decoder
 
 
@@ -524,36 +514,5 @@ class Tello:
             pass
 
         return speed
-
-def sendingCommand(self):
-    """
-    start a while loop that sends 'command' to tello every 5 second
-    """    
-
-    while True:
-        drone.send_command('command')        
-        time.sleep(5)
-
-if __name__ == "__main__":
-    try:
-        drone = Tello('', 8889)
-        time.sleep(0.5)
-        sending_command_thread = threading.Thread(target = sendingCommand)
-        sending_command_thread.daemon = True
-        sending_command_thread.start()
-            
-        # cam = cv2.VideoCapture(0)
-        while True:
-            img = droneello.read()
-            if img is None :
-                continue 
-            img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-            cv2.imshow('SHB-TELLO', img)
-            if cv2.waitKey(1) == 27: 
-                break  # esc to quit
-        cv2.destroyAllWindows()
-    except:
-        print("error in try")
-
 
 
