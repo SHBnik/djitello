@@ -5,6 +5,7 @@ import cv2
 import threading
 import time 
 import sys
+import os
 
 import rospy
 import yaml
@@ -78,7 +79,8 @@ if __name__ == "__main__":
 
 
     # Parse yaml file
-    camera_info_msg = yaml_to_CameraInfo("/home/shb/catkin_ws/src/djitello/src/cam_calibration.yaml")
+    path = os.path.expanduser("~/catkin_ws")
+    camera_info_msg = yaml_to_CameraInfo(path+"/src/djitello/src/cam_calibration.yaml")
 
 
     bridge = CvBridge()
