@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/shb/Tello-Python/Tello_Video/h264decoder/h264decoder.cpp
+/home/shb/catkin_ws/src/djitello/src/h264decoder/h264decoder.cpp
 libavcodec/avcodec.h
 -
 libavutil/avutil.h
@@ -16,11 +16,11 @@ libavutil/mem.h
 libswscale/swscale.h
 -
 h264decoder.hpp
-/home/shb/Tello-Python/Tello_Video/h264decoder/h264decoder.hpp
+/home/shb/catkin_ws/src/djitello/src/h264decoder/h264decoder.hpp
 utility
 -
 
-/home/shb/Tello-Python/Tello_Video/h264decoder/h264decoder.hpp
+/home/shb/catkin_ws/src/djitello/src/h264decoder/h264decoder.hpp
 cstdlib
 -
 stdexcept
@@ -28,7 +28,7 @@ stdexcept
 utility
 -
 
-/home/shb/Tello-Python/Tello_Video/h264decoder/h264decoder_python.cpp
+/home/shb/catkin_ws/src/djitello/src/h264decoder/h264decoder_python.cpp
 cstdio
 -
 cstdlib
@@ -50,7 +50,7 @@ boost/python/module.hpp
 boost/python/class.hpp
 -
 h264decoder.hpp
-/home/shb/Tello-Python/Tello_Video/h264decoder/h264decoder.hpp
+/home/shb/catkin_ws/src/djitello/src/h264decoder/h264decoder.hpp
 
 /usr/include/python2.7/Python.h
 patchlevel.h

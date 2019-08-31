@@ -2,6 +2,11 @@
 this is ROS driver for DJI tello based on DJI python SDK
 
 ## Installing
+before everything run this two lines to dont get fucking "core dump" error
+```
+sudo apt-get install libtcmalloc-minimal4
+export LD_PRELOAD="/usr/lib/libtcmalloc_minimal.so.4"
+```
 first go to catkin_ws/src directory
 ```
 cd catkin_ws/src
