@@ -14,7 +14,8 @@ from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from sensor_msgs.msg import CameraInfo
 from djitello.srv import *
-
+import os
+import sys
  
 
 
@@ -80,7 +81,8 @@ if __name__ == "__main__":
 
 
     # Parse yaml file
-    camera_info_msg = yaml_to_CameraInfo("/home/shb/catkin_ws/src/djitello/src/cam_calibration.yaml")
+    path = os.path.expanduser("~/catkin_ws")
+    camera_info_msg = yaml_to_CameraInfo(path+"/src/djitello/src/cam_calibration.yaml")
 
 
     bridge = CvBridge()
