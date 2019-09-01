@@ -7,7 +7,13 @@ before everything run this two lines to dont get fucking "core dump" error
 sudo apt-get install libtcmalloc-minimal4
 export LD_PRELOAD="/usr/lib/libtcmalloc_minimal.so.4"
 ```
-first go to catkin_ws/src directory
+install FFmpeg
+```
+sudo add-apt-repository ppa:jonathonf/ffmpeg-4
+sudo apt-get update
+sudo apt-get install ffmpeg
+```
+go to catkin_ws/src directory
 ```
 cd catkin_ws/src
 ```
