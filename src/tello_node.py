@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
 import os
+os.environ["LD_PRELOAD"] = "/usr/lib/libtcmalloc_minimal.so.4"
+
+
 import time
 import sys
 import tello
@@ -17,7 +20,6 @@ import geometry_msgs.msg
 from djitello.srv import *
 
  
-os.environ["LD_PRELOAD"] = "/usr/lib/libtcmalloc_minimal.so.4"
 drone = None
 
 
@@ -105,7 +107,10 @@ if __name__ == "__main__":
             if img is None :
                 continue 
             img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-            image_pub.publish(bridge.cv2_to_imgmsg(img, "bgr8"))
+            ROS_Image = bridge.cv2_to_imgmsg(img, "bgr8")
+            ROS_Image.header.frame_id = 'image_rect'
+            camera_info_msg.header.frame_id = 'image_rect'
+            image_pub.publish(ROS_Image)
             caminfo_pub.publish(camera_info_msg)
     except Exception as e:
         rospy.logerr('Error in connecting to tello : %s'%e)

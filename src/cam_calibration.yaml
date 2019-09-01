@@ -1,10 +1,10 @@
-image_width: 320
-image_height: 240
-camera_name: prosilica
+image_width: 336
+image_height: 252
+camera_name: tello
 camera_matrix:
   rows: 3
   cols: 3
-  data: [0, 0, 0, 0, 0, 0, 0, 0, 1]
+  data: [1, 0, 512, 0, 1, 256, 0, 0, 1]
 distortion_model: plumb_bob
 distortion_coefficients:
   rows: 1
@@ -13,8 +13,8 @@ distortion_coefficients:
 rectification_matrix:
   rows: 3
   cols: 3
-  data: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
 projection_matrix:
   rows: 3
   cols: 4
-  data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  data: [1, 0, 512, 0, 0, 1, 256, 0, 0, 0, 1, 0]
