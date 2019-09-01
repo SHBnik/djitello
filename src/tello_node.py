@@ -81,8 +81,9 @@ if __name__ == "__main__":
 
 
     # Parse yaml file
-    path = os.path.expanduser("~/catkin_ws")
-    camera_info_msg = yaml_to_CameraInfo(path+"/src/djitello/src/cam_calibration.yaml")
+    file = sys.argv[0]
+    path = os.path.dirname(file)
+    camera_info_msg = yaml_to_CameraInfo(str(path+"/cam_calibration.yaml"))
 
 
     bridge = CvBridge()
