@@ -17,7 +17,7 @@ from djitello.srv import *
 import os
 import sys
  
-
+os.environ["LD_PRELOAD"] = "/usr/lib/libtcmalloc_minimal.so.4"
 
 drone = None
 
