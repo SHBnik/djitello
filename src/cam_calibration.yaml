@@ -1,20 +1,20 @@
-image_width: 336
-image_height: 252
-camera_name: tello
+image_width: 960
+image_height: 720
+camera_name: narrow_stereo
 camera_matrix:
   rows: 3
   cols: 3
-  data: [1, 0, 512, 0, 1, 256, 0, 0, 1]
+  data: [915.913353, 0.000000, 484.982306, 0.000000, 920.575210, 358.283298, 0.000000, 0.000000, 1.000000]
 distortion_model: plumb_bob
 distortion_coefficients:
   rows: 1
   cols: 5
-  data: [0, 0, 0, 0, 0]
+  data: [-0.013198, 0.037883, 0.009448, -0.004373, 0.000000]
 rectification_matrix:
   rows: 3
   cols: 3
-  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+  data: [1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000]
 projection_matrix:
   rows: 3
   cols: 4
-  data: [1, 0, 512, 0, 0, 1, 256, 0, 0, 0, 1, 0]
+  data: [919.657300, 0.000000, 481.110364, 0.000000, 0.000000, 922.515588, 364.282887, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000]
